@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "wemos")(type "KiCad")(uri "/home/zhusmansan/Work/embedded/kicad/kicad-symbols/MCU_Module.kicad_sym")(options "")(descr ""))
+)

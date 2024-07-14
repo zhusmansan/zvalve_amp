@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "wemos")(type "KiCad")(uri "/home/zhusmansan/Work/embedded/kicad/kicad-footprints/Module.pretty")(options "")(descr ""))
+)

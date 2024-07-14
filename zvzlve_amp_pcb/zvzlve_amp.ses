@@ -1,0 +1,165 @@
+(session "Z:\home\zhusmansan\Work\embedded\zvalve_amp\zvzlve_amp\zvzlve_amp.ses"
+(base_design "Z:\home\zhusmansan\Work\embedded\zvalve_amp\zvzlve_amp\zvzlve_amp.dsn")
+      (placement 
+         (resolution mm 100000)
+         (component "Package_TO_SOT_THT:TO-220-3_Vertical"
+            (place "U3" 13208000 -3810000 front 270.00)
+            (place "U1" 12954000 -2540000 front 270.00)
+         )
+         (component "Package_DIP:DIP-8_W7.62mm"
+            (place "U2" 11938000 -3810000 front 0.00)
+         )
+         (component "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
+            (place "RSIG20V1" 13633000 -3048000 front 270.00)
+            (place "RVREG20V1" 12148000 -3048000 front 270.00)
+            (place "RREF10V1" 11481000 -3048000 front 270.00)
+         )
+         (component "wemos:WEMOS_S2_mini"
+            (place "U4" 11862750 -5582500 front 0.00)
+         )
+         (component "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+            (place "J1" 14221500 -3793700 front 180.00)
+         )
+         (component "Resistor_SMD:R_0805_2012Metric"
+            (place "RREF1" 11493500 -3302000 back 90.00)
+            (place "RSIG1" 13652500 -3302000 back 90.00)
+         )
+         (component "Resistor_SMD:R_0805_2012Metric::1"
+            (place "RVREG1" 12698780 -2718320 back 270.00)
+         )
+      )
+      (routes
+         (resolution mm 100000)
+         (library_out
+            (padstack "Via[0-1]_800:400_um"
+               (shape (circ "F.Cu" 80000 0 0))
+               (shape (circ "B.Cu" 80000 0 0))
+            )
+         )
+         (network_out
+            (net "20v"
+            (wire (path "F.Cu" 25000 13208000 -3810000 13120500 -3810000 13108000 -3810000 12700000 -3810000))
+            (wire (path "B.Cu" 25000 12698780 -2809570 12700000 -2848420 12700000 -2860920 12700000 -3810000))
+            (wire (path "B.Cu" 25000 12954000 -2794000 12949250 -2794000 12947430 -2795820 12768880 -2795820
+             12756380 -2795820 12698780 -2809570))
+            )
+            (net "Net-(U1-ADJ)"
+            (wire (path "B.Cu" 25000 12148000 -2794000 12148000 -2540000))
+            (wire (path "B.Cu" 25000 12698780 -2627070 12756380 -2613320 12768880 -2613320 12854000 -2613320
+             12866500 -2613320 12954000 -2540000))
+            (wire (path "B.Cu" 25000 12698780 -2627070 12629640 -2596020 12204020 -2596020 12148000 -2540000))
+            )
+            (net "GND"
+            (wire (path "F.Cu" 25000 11938000 -4572000 12060500 -4449500 12060500 -4321920 12477520 -3904900))
+            (wire (path "F.Cu" 25000 12477520 -3904900 12514120 -3941500 13080750 -3941500 13203250 -4064000
+             13208000 -4064000))
+            (wire (path "F.Cu" 25000 12477520 -3904900 12148000 -3575380 12148000 -3048000))
+            (wire (path "B.Cu" 25000 14021750 -7033200 14021750 -6799890 13947360 -6725500 13842140 -6725500
+             13350500 -6233860 13350500 -4132120 13289650 -4071270))
+            (wire (path "B.Cu" 25000 13894750 -7106500 13948450 -7106500 14021750 -7033200))
+            (wire (path "B.Cu" 25000 13208000 -4064000 13212750 -4064000 13220020 -4071270 13289650 -4071270))
+            (wire (path "B.Cu" 25000 11493500 -3393250 11543300 -3443640 11543300 -4177300 11938000 -4572000))
+            (wire (path "B.Cu" 25000 14221500 -3539700 14106100 -3424300 13721640 -3424300 13652500 -3393250))
+            (wire (path "B.Cu" 25000 13652500 -3393250 13593830 -3439960 13350500 -3683290 13350500 -4010420
+             13289650 -4071270))
+            (wire (path "B.Cu" 25000 14148750 -7106500 14095050 -7106500 14021750 -7033200))
+            )
+            (net "+24V"
+            (wire (path "F.Cu" 25000 14221500 -3793700 14149000 -3721200 14136500 -3721200 13631950 -3721200
+             12958750 -3048000 12954000 -3048000))
+            )
+            (net "Net-(U2A--)"
+            (wire (path "B.Cu" 25000 11481000 -3048000 11481000 -3159400 11481000 -3171900 11493500 -3210750))
+            (wire (path "B.Cu" 25000 11493500 -3210750 11552170 -3257460 11606100 -3311390 11606100 -3732100
+             11938000 -4064000))
+            )
+            (net "3V3"
+            (wire (path "F.Cu" 25000 11862750 -7360500 11735020 -7232770 11735020 -4520980 11938000 -4318000))
+            )
+            (net "Net-(U2B--)"
+            (wire (path "B.Cu" 25000 13633000 -3048000 13633000 -3159400 13633000 -3171900 13652500 -3210750))
+            (wire (path "B.Cu" 25000 13652500 -3210750 13583360 -3241800 13520850 -3241800 12822500 -3940150
+             12822500 -4195500 12700000 -4318000))
+            )
+            (net "valve_D+-10v"
+            (wire (path "F.Cu" 25000 11938000 -3810000 11870500 -3742500 11870500 -3730000 11870500 -3015190
+             11779350 -2924040))
+            (wire (path "F.Cu" 25000 11779350 -2924040 11611040 -2924040 11481000 -2794000))
+            (wire (path "F.Cu" 25000 14221500 -3031700 13869300 -2679500 13348850 -2679500 13071600 -2402250
+             12836400 -2402250 12314610 -2924040 11779350 -2924040))
+            (wire (path "B.Cu" 25000 11481000 -2540000 11481000 -2794000))
+            )
+            (net "valve_E-+10v"
+            (wire (path "B.Cu" 25000 14221500 -2777700 14205200 -2794000 13633000 -2794000))
+            (wire (path "B.Cu" 25000 13633000 -2540000 13633000 -2794000))
+            (wire (path "B.Cu" 25000 13633000 -2794000 12822500 -3604500 12822500 -3860740 12700000 -3983240
+             12700000 -4064000))
+            )
+            (net "5v"
+            (wire (path "F.Cu" 25000 14148750 -7360500 14021750 -7233500 14021750 -7053890 13947360 -6979500
+             13842140 -6979500 13212750 -6350110 13212750 -4318000 13208000 -4318000))
+            )
+            (net "unconnected-(U4-GPIO11-Pad6)"
+            )
+            (net "unconnected-(U4-GPIO34-Pad29)"
+            )
+            (net "unconnected-(U4-GPIO14-Pad24)"
+            )
+            (net "unconnected-(U4-GPIO9-Pad5)"
+            )
+            (net "unconnected-(U4-XTAL_32K_P-Pad25)"
+            )
+            (net "unconnected-(U4-GPIO21-Pad28)"
+            )
+            (net "unconnected-(U4-GPIO40-Pad32)"
+            )
+            (net "unconnected-(U4-GPIO4-Pad19)"
+            )
+            (net "unconnected-(U4-GPIO5-Pad3)"
+            )
+            (net "unconnected-(U4-GPIO6-Pad20)"
+            )
+            (net "unconnected-(U4-EN-Pad1)"
+            )
+            (net "unconnected-(U4-GPIO13-Pad23)"
+            )
+            (net "unconnected-(U4-GPIO8-Pad21)"
+            )
+            (net "unconnected-(U4-GPIO33-Pad13)"
+            )
+            (net "unconnected-(U4-GPIO39-Pad16)"
+            )
+            (net "unconnected-(U4-GPIO35-Pad14)"
+            )
+            (net "unconnected-(U4-GPIO37-Pad15)"
+            )
+            (net "unconnected-(U4-GPIO10-Pad22)"
+            )
+            (net "unconnected-(U4-GPIO36-Pad30)"
+            )
+            (net "unconnected-(U4-GPIO7-Pad4)"
+            )
+            (net "unconnected-(U4-GPIO12-Pad7)"
+            )
+            (net "unconnected-(U4-GPIO3-Pad2)"
+            )
+            (net "unconnected-(U4-DAC_2-Pad12)"
+            )
+            (net "unconnected-(U4-GPIO2-Pad18)"
+            )
+            (net "unconnected-(U4-XTAL_32K_N-Pad11)"
+            )
+            (net "unconnected-(U4-GPIO1-Pad17)"
+            )
+            (net "unconnected-(U4-GPIO38-Pad31)"
+            )
+            (net "unconnected-(J1-Pin_3-Pad3)"
+            )
+            (net "unconnected-(J1-Pin_6-Pad6)"
+            )
+            (net "Net-(U2B-+)"
+            (wire (path "B.Cu" 25000 13894750 -6852500 13890660 -6852500 12700000 -5661840 12700000 -4572000))
+            )
+         )
+      )
+   )
